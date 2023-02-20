@@ -60,12 +60,12 @@ function Comment({
           <div className="comment__likes flex md:flex-col md:absolute md:top-6 items-center bg-very-light-gray w-fit rounded-lg">
             <button className="pl-4 pr-2 py-2 md:px-4 md:pt-4  fill-light-grayish-blue hover:fill-moderate-blue transition-all" onClick={() => dispatchCommentAction({ type: 'increment-score', payload: { id } })} type="button">
               <PlusIcon />
-              <span className="hidden">Increase likes</span>
+              <span className="w-0 h-0 p-0 m-0">Increase likes</span>
             </button>
             <span className="px-2 md:px-4 py-2 text-moderate-blue font-medium">{score}</span>
             <button className="pl-2 pr-4 py-2 md:px-4 md:pb-4  fill-light-grayish-blue hover:fill-moderate-blue transition-all" onClick={() => dispatchCommentAction({ type: 'decrement-score', payload: { id } })} type="button">
               <MinusIcon />
-              <span className="hidden">decrease likes</span>
+              <span className="w-0 h-0 p-0 m-0">decrease likes</span>
             </button>
           </div>
           <div className="comment__actions flex gap-4 md:absolute md:top-8 md:right-6">
